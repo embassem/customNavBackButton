@@ -12,6 +12,8 @@
 		187E6EB32227F9B6009AE74B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E6EB12227F9B6009AE74B /* Main.storyboard */; };
 		187E6EB52227F9BA009AE74B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187E6EB42227F9BA009AE74B /* Assets.xcassets */; };
 		187E6EB82227F9BA009AE74B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E6EB62227F9BA009AE74B /* LaunchScreen.storyboard */; };
+		187E6EC02227F9D1009AE74B /* NavigationBar+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E6EBF2227F9D1009AE74B /* NavigationBar+Appearance.swift */; };
+		187E6EC22227FC38009AE74B /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E6EC12227FC38009AE74B /* AppNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		187E6EB42227F9BA009AE74B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187E6EB72227F9BA009AE74B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187E6EB92227F9BA009AE74B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187E6EBF2227F9D1009AE74B /* NavigationBar+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationBar+Appearance.swift"; sourceTree = "<group>"; };
+		187E6EC12227FC38009AE74B /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				187E6EB42227F9BA009AE74B /* Assets.xcassets */,
 				187E6EB62227F9BA009AE74B /* LaunchScreen.storyboard */,
 				187E6EB92227F9BA009AE74B /* Info.plist */,
+				187E6EBF2227F9D1009AE74B /* NavigationBar+Appearance.swift */,
+				187E6EC12227FC38009AE74B /* AppNavigationController.swift */,
 			);
 			path = CustomNavugationBarBackButton;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				187E6EB02227F9B6009AE74B /* ViewController.swift in Sources */,
+				187E6EC22227FC38009AE74B /* AppNavigationController.swift in Sources */,
 				187E6EAE2227F9B6009AE74B /* AppDelegate.swift in Sources */,
+				187E6EC02227F9D1009AE74B /* NavigationBar+Appearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,24 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wwH-Yq-syI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Base View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BaseViewController" customModule="CustomNavugationBarBackButton" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="MVU-rq-OoP">
+                        <rightBarButtonItems>
+                            <barButtonItem title="show" id="Gfl-Ni-Z2E">
+                                <connections>
+                                    <segue destination="wzk-ih-ycp" kind="show" id="Ukm-g9-Q9v"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" id="EcJ-BI-Ghw"/>
+                            <barButtonItem title="Item" id="NRH-9h-zje"/>
+                            <barButtonItem title="Item" id="gBv-kW-gmI"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="809" y="-566"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="5ky-rc-L42">
+            <objects>
+                <viewController id="wzk-ih-ycp" customClass="BaseViewController" customModule="CustomNavugationBarBackButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="saK-eg-ETL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CsS-mW-GkO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="xJt-tE-Bfl">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="JR9-x2-s1e">
+                            <connections>
+                                <segue destination="eQy-Qr-am3" kind="show" id="Buw-I3-cC1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XYF-Qv-dW0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1474" y="-566"/>
+        </scene>
+        <!--App Navigation Controller-->
+        <scene sceneID="yIR-0v-lDT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wwH-Yq-syI" customClass="AppNavigationController" customModule="CustomNavugationBarBackButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tsz-Em-7rc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RI7-1D-wCP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pFU-2X-ly1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="-564.46776611694156"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="swN-cu-1M7">
+            <objects>
+                <viewController id="eQy-Qr-am3" customClass="BaseViewController" customModule="CustomNavugationBarBackButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F0N-Yc-NsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4cI-Jz-yvr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="LzK-ND-Ny1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="74m-8B-atK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="-566"/>
         </scene>
     </scenes>
 </document>

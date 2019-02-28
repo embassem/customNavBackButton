@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AppNavigationController.swift
 //  CustomNavugationBarBackButton
 //
 //  Created by Bassem Abbas on 2/28/19.
@@ -8,11 +8,9 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class AppNavigationController: UINavigationController, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.clearBackBarButtonTitle()
     }
 }
-
